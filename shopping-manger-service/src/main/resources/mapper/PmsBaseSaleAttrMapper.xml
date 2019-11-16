@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.PmsBaseSaleAttrMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.PmsBaseSaleAttr">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name
+    from pms_base_sale_attr
+  </select>
+</mapper>

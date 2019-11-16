@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/shopping_user/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-api/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-user/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-service-util/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-web-util/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-manger-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shopping-manger-web/pom.xml" />
+        <option value="$PROJECT_DIR$/fastdfs-client-java/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_12" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

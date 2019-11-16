@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.PmsCommentReplayMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.PmsCommentReplay">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="comment_id" jdbcType="BIGINT" property="commentId" />
+    <result column="member_nick_name" jdbcType="VARCHAR" property="memberNickName" />
+    <result column="member_icon" jdbcType="VARCHAR" property="memberIcon" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+  <insert id="insert" parameterType="com.lx.qlw.shopping.api.bean.PmsCommentReplay">
+    insert into pms_comment_replay (id, comment_id, member_nick_name, 
+      member_icon, content, create_time, 
+      type)
+    values (#{id,jdbcType=BIGINT}, #{commentId,jdbcType=BIGINT}, #{memberNickName,jdbcType=VARCHAR}, 
+      #{memberIcon,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{type,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, comment_id, member_nick_name, member_icon, content, create_time, type
+    from pms_comment_replay
+  </select>
+</mapper>

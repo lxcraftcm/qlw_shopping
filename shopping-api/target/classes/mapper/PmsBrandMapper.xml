@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.PmsBrandMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.PmsBrand">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="first_letter" jdbcType="VARCHAR" property="firstLetter" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="factory_status" jdbcType="INTEGER" property="factoryStatus" />
+    <result column="show_status" jdbcType="INTEGER" property="showStatus" />
+    <result column="product_count" jdbcType="INTEGER" property="productCount" />
+    <result column="product_comment_count" jdbcType="INTEGER" property="productCommentCount" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="big_pic" jdbcType="VARCHAR" property="bigPic" />
+    <result column="brand_story" jdbcType="LONGVARCHAR" property="brandStory" />
+  </resultMap>
+  <insert id="insert" parameterType="com.lx.qlw.shopping.api.bean.PmsBrand">
+    insert into pms_brand (id, name, first_letter, 
+      sort, factory_status, show_status, 
+      product_count, product_comment_count, logo, 
+      big_pic, brand_story)
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{firstLetter,jdbcType=VARCHAR}, 
+      #{sort,jdbcType=INTEGER}, #{factoryStatus,jdbcType=INTEGER}, #{showStatus,jdbcType=INTEGER}, 
+      #{productCount,jdbcType=INTEGER}, #{productCommentCount,jdbcType=INTEGER}, #{logo,jdbcType=VARCHAR}, 
+      #{bigPic,jdbcType=VARCHAR}, #{brandStory,jdbcType=LONGVARCHAR})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, first_letter, sort, factory_status, show_status, product_count, 
+    product_comment_count, logo, big_pic, brand_story
+    from pms_brand
+  </select>
+</mapper>

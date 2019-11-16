@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" filepath="$PROJECT_DIR$/fastdfs-client-java/fastdfs-client-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qlw_shopping.iml" filepath="$PROJECT_DIR$/qlw_shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-api/shopping-api.iml" filepath="$PROJECT_DIR$/shopping-api/shopping-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-common-util/shopping-common-util.iml" filepath="$PROJECT_DIR$/shopping-common-util/shopping-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-manger-service/shopping-manger-service.iml" filepath="$PROJECT_DIR$/shopping-manger-service/shopping-manger-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-manger-web/shopping-manger-web.iml" filepath="$PROJECT_DIR$/shopping-manger-web/shopping-manger-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-parent/shopping-parent.iml" filepath="$PROJECT_DIR$/shopping-parent/shopping-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-service-util/shopping-service-util.iml" filepath="$PROJECT_DIR$/shopping-service-util/shopping-service-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-user/shopping-user.iml" filepath="$PROJECT_DIR$/shopping-user/shopping-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-user-service/shopping-user-service.iml" filepath="$PROJECT_DIR$/shopping-user-service/shopping-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-user-web/shopping-user-web.iml" filepath="$PROJECT_DIR$/shopping-user-web/shopping-user-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shopping-web-util/shopping-web-util.iml" filepath="$PROJECT_DIR$/shopping-web-util/shopping-web-util.iml" />
+    </modules>
+  </component>
+</project>

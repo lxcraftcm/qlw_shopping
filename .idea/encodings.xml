@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/fastdfs-client-java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-manger-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-manger-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-service-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-user-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shopping-web-util" charset="UTF-8" />
+  </component>
+</project>

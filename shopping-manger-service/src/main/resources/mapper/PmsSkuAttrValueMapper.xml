@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.PmsSkuAttrValueMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.PmsSkuAttrValue">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="attr_id" jdbcType="BIGINT" property="attrId" />
+    <result column="value_id" jdbcType="BIGINT" property="valueId" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, attr_id, value_id, sku_id
+    from pms_sku_attr_value
+  </select>
+</mapper>

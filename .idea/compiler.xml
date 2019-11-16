@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shopping-user-service" />
+        <module name="shopping-common-util" />
+        <module name="fastdfs-client-java" />
+        <module name="shopping-user" />
+        <module name="shopping-service-util" />
+        <module name="shopping-api" />
+        <module name="shopping-manger-web" />
+        <module name="shopping-user-web" />
+        <module name="shopping-web-util" />
+        <module name="shopping-manger-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fastdfs-client-java" target="1.6" />
+      <module name="mybatis-generator" target="1.5" />
+      <module name="shopping-api" target="1.5" />
+      <module name="shopping-common-util" target="1.8" />
+      <module name="shopping-manger-service" target="1.8" />
+      <module name="shopping-manger-web" target="1.8" />
+      <module name="shopping-parent" target="1.8" />
+      <module name="shopping-service-util" target="1.8" />
+      <module name="shopping-user" target="1.8" />
+      <module name="shopping-user-service" target="1.8" />
+      <module name="shopping-user-web" target="1.8" />
+      <module name="shopping-web-util" target="1.8" />
+      <module name="shopping_user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shopping-manger-service" options="" />
+      <module name="shopping-manger-web" options="" />
+      <module name="shopping-user-service" options="" />
+      <module name="shopping-user-web" options="" />
+      <module name="shopping_user" options="" />
+    </option>
+  </component>
+</project>

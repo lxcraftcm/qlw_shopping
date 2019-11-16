@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.WmsWareInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.WmsWareInfo">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="areacode" jdbcType="VARCHAR" property="areacode" />
+  </resultMap>
+  <insert id="insert" parameterType="com.lx.qlw.shopping.api.bean.WmsWareInfo">
+    insert into wms_ware_info (id, name, address, 
+      areacode)
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{areacode,jdbcType=VARCHAR})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, name, address, areacode
+    from wms_ware_info
+  </select>
+</mapper>

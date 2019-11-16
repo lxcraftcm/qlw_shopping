@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.PmsProductInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.PmsProductInfo">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="catalog3_id" jdbcType="BIGINT" property="catalog3Id" />
+    <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+  </resultMap>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, product_name, description, catalog3_id, tm_id
+    from pms_product_info
+  </select>
+</mapper>

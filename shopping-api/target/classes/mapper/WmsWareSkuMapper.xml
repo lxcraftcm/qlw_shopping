@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.WmsWareSkuMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.WmsWareSku">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="warehouse_id" jdbcType="BIGINT" property="warehouseId" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="stock_locked" jdbcType="INTEGER" property="stockLocked" />
+  </resultMap>
+  <insert id="insert" parameterType="com.lx.qlw.shopping.api.bean.WmsWareSku">
+    insert into wms_ware_sku (id, sku_id, warehouse_id, 
+      stock, stock_name, stock_locked
+      )
+    values (#{id,jdbcType=BIGINT}, #{skuId,jdbcType=BIGINT}, #{warehouseId,jdbcType=BIGINT}, 
+      #{stock,jdbcType=INTEGER}, #{stockName,jdbcType=VARCHAR}, #{stockLocked,jdbcType=INTEGER}
+      )
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, sku_id, warehouse_id, stock, stock_name, stock_locked
+    from wms_ware_sku
+  </select>
+</mapper>

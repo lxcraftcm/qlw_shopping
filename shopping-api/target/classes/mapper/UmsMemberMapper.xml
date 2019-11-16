@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.qlw.shopping.api.mapper.UmsMemberMapper">
+  <resultMap id="BaseResultMap" type="com.lx.qlw.shopping.api.bean.UmsMember">
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="member_level_id" jdbcType="BIGINT" property="memberLevelId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="job" jdbcType="VARCHAR" property="job" />
+    <result column="personalized_signature" jdbcType="VARCHAR" property="personalizedSignature" />
+    <result column="source_type" jdbcType="INTEGER" property="sourceType" />
+    <result column="integration" jdbcType="INTEGER" property="integration" />
+    <result column="growth" jdbcType="INTEGER" property="growth" />
+    <result column="luckey_count" jdbcType="INTEGER" property="luckeyCount" />
+    <result column="history_integration" jdbcType="INTEGER" property="historyIntegration" />
+  </resultMap>
+  <insert id="insert" parameterType="com.lx.qlw.shopping.api.bean.UmsMember">
+    insert into ums_member (id, member_level_id, username, 
+      password, nickname, phone, 
+      status, create_time, icon, 
+      gender, birthday, city, 
+      job, personalized_signature, source_type, 
+      integration, growth, luckey_count, 
+      history_integration)
+    values (#{id,jdbcType=BIGINT}, #{memberLevelId,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{icon,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=INTEGER}, #{birthday,jdbcType=DATE}, #{city,jdbcType=VARCHAR}, 
+      #{job,jdbcType=VARCHAR}, #{personalizedSignature,jdbcType=VARCHAR}, #{sourceType,jdbcType=INTEGER}, 
+      #{integration,jdbcType=INTEGER}, #{growth,jdbcType=INTEGER}, #{luckeyCount,jdbcType=INTEGER}, 
+      #{historyIntegration,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, member_level_id, username, password, nickname, phone, status, create_time, 
+    icon, gender, birthday, city, job, personalized_signature, source_type, integration, 
+    growth, luckey_count, history_integration
+    from ums_member
+  </select>
+</mapper>
